@@ -14,7 +14,7 @@ public class DateConvert implements Converter {
 	
 	private static Log log = LogFactory.getLog(DateConvert.class);
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings("rawtypes")
 	public Object convert(Class arg0, Object arg1) {
 		if(arg1 instanceof java.sql.Date)
 			return new Date(((java.sql.Date) arg1).getTime());
