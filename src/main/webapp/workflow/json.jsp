@@ -1,2 +1,2 @@
-<%@ page language="java" contentType="application/json; charset=GBK"
-	pageEncoding="GBK"%>${json}
+<%@ page language="java" contentType="application/json; charset=UTF-8"
+	pageEncoding="UTF-8"%>${json}

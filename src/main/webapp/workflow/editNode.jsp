@@ -1,28 +1,28 @@
-<%@ page language="java" contentType="text/javascript; charset=GBK" pageEncoding="GBK"%>
+<%@ page language="java" contentType="text/javascript; charset=UTF-8" pageEncoding="UTF-8"%>
 <div style='text-aligin:center'>
 
 <div class='tabs'>
 	<ul>
-		<li><a href="#baseProp">»ù±¾ÊôÐÔ</a></li>
-		<li><a href="#ExtProp">À©Õ¹ÊôÐÔ</a></li>
-		<li><a href="#PreFuncProp">³õÊ¼º¯Êý</a></li>
-		<li><a href="#ConditionFuncProp">Ìõ¼þº¯Êý</a></li>
+		<li><a href="#baseProp">åŸºæœ¬å±žæ€§</a></li>
+		<li><a href="#ExtProp">æ‰©å±•å±žæ€§</a></li>
+		<li><a href="#PreFuncProp">åˆå§‹å‡½æ•°</a></li>
+		<li><a href="#ConditionFuncProp">æ¡ä»¶å‡½æ•°</a></li>
 	</ul>
 	<div id="baseProp">
 	<table cellpadding="0" cellspacing="0" width="100%">
 	<tr>
-		<td class='ui-widget ui-state-default lheader'>½ÚµãÃû×Ö</td>
+		<td class='ui-widget ui-state-default lheader'>èŠ‚ç‚¹åå­—</td>
 		<td class="ui-widget ui-widget-content lcontent"><input type='text' name='text' /></td>
-		<td class='ui-widget ui-state-default lheader'>½ÚµãÃèÊö</td>
+		<td class='ui-widget ui-state-default lheader'>èŠ‚ç‚¹æè¿°</td>
 		<td class="ui-widget ui-widget-content lcontent"><input type='text' name='description' /></td>
 	</tr>
 	<tr>
-		<td class='ui-widget ui-state-default lheader'>ÀàÐÍ</td>
+		<td class='ui-widget ui-state-default lheader'>ç±»åž‹</td>
 		<td class="ui-widget ui-widget-content lcontent">
 			<select name='nodeType'>
-				<option value='start'>¿ªÊ¼</option>
-				<option value='node' SELECTED="SELECTED">½Úµã</option>
-				<option value='end'>½áÊø</option>
+				<option value='start'>å¼€å§‹</option>
+				<option value='node' SELECTED="SELECTED">èŠ‚ç‚¹</option>
+				<option value='end'>ç»“æŸ</option>
 			</select>
 		</td>
 		<td class='ui-widget ui-state-default lheader'>id</td>
@@ -39,11 +39,11 @@
 		</td>
 	</tr>
 	<tr>
-		<td class='ui-widget ui-state-default lheader'>¿í</td>
+		<td class='ui-widget ui-state-default lheader'>å®½</td>
 		<td class="ui-widget ui-widget-content lcontent">
 		<input class='digits' type='text' name='width' />
 		</td>
-		<td class='ui-widget ui-state-default lheader'>¸ß</td>
+		<td class='ui-widget ui-state-default lheader'>é«˜</td>
 		<td class="ui-widget ui-widget-content lcontent">
 		<input class='digits' type='text' name='height' />
 		</td>
@@ -53,16 +53,16 @@
 	
 	<div id='ExtProp' style='VERTICAL-ALIGN:top'>
 		<div>
-		<span class='rbutton addProp'>Ìí¼Ó</span>
+		<span class='rbutton addProp'>æ·»åŠ </span>
 		</div>
 		<div class="propDiv">
 		<table cellpadding="0" cellspacing="0"  width="100%">
 		<thead>
 		<tr valign=top>
-			<td class='ui-widget ui-state-default cheader' width='65px'>²Ù×÷</td>
-			<td class='ui-widget ui-state-default cheader'>ÊôÐÔÃû</td>
-			<td class='ui-widget ui-state-default cheader'>ÊôÐÔÖµ</td>
-			<td class='ui-widget ui-state-default cheader' width='80px'>ÀàÐÍ</td>
+			<td class='ui-widget ui-state-default cheader' width='65px'>æ“ä½œ</td>
+			<td class='ui-widget ui-state-default cheader'>å±žæ€§å</td>
+			<td class='ui-widget ui-state-default cheader'>å±žæ€§å€¼</td>
+			<td class='ui-widget ui-state-default cheader' width='80px'>ç±»åž‹</td>
 		</tr>
 		</thead>
 		<tbody class='propBody'>
@@ -72,16 +72,16 @@
 	</div>
 	<div id='PreFuncProp' style='VERTICAL-ALIGN:top'>
 		<div>
-		<span class='rbutton addFuncProp'>Ìí¼Ó</span>
+		<span class='rbutton addFuncProp'>æ·»åŠ </span>
 		</div>
 		<div class="propDiv">
 		<table cellpadding="0" cellspacing="0" width="100%">
 		<thead>
 		<tr valign=top>
-			<td class='ui-widget ui-state-default cheader' width='65px'>²Ù×÷</td>
-			<td class='ui-widget ui-state-default cheader'>ÀàÃû</td>
-			<td class='ui-widget ui-state-default cheader' width='80px'>·½·¨Ãû</td>
-			<td class='ui-widget ui-state-default cheader'  width='45px'>ÀàÐÍ</td>
+			<td class='ui-widget ui-state-default cheader' width='65px'>æ“ä½œ</td>
+			<td class='ui-widget ui-state-default cheader'>ç±»å</td>
+			<td class='ui-widget ui-state-default cheader' width='80px'>æ–¹æ³•å</td>
+			<td class='ui-widget ui-state-default cheader'  width='45px'>ç±»åž‹</td>
 		</tr>
 		</thead>
 		<tbody class='funcPropsBody'>
@@ -91,16 +91,16 @@
 	</div>
 	<div id='ConditionFuncProp' style='VERTICAL-ALIGN:top'>
 		<div>
-		<span class='rbutton addFuncProp'>Ìí¼Ó</span>
+		<span class='rbutton addFuncProp'>æ·»åŠ </span>
 		</div>
 		<div class="propDiv">
 		<table cellpadding="0" cellspacing="0" width="100%">
 		<thead>
 		<tr valign=top>
-			<td class='ui-widget ui-state-default cheader' width='65px'>²Ù×÷</td>
-			<td class='ui-widget ui-state-default cheader'>ÀàÃû</td>
-			<td class='ui-widget ui-state-default cheader' width='80px'>·½·¨Ãû</td>
-			<td class='ui-widget ui-state-default cheader' width='45px'>ÀàÐÍ</td>
+			<td class='ui-widget ui-state-default cheader' width='65px'>æ“ä½œ</td>
+			<td class='ui-widget ui-state-default cheader'>ç±»å</td>
+			<td class='ui-widget ui-state-default cheader' width='80px'>æ–¹æ³•å</td>
+			<td class='ui-widget ui-state-default cheader' width='45px'>ç±»åž‹</td>
 		</tr>
 		</thead>
 		<tbody class='funcPropsBody'>

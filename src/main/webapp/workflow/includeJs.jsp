@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/javascript; charset=GBK" pageEncoding="GBK"%>
+<%@ page language="java" contentType="text/javascript; charset=UTF-8" pageEncoding="UTF-8"%>
 function $importJs(url) {
 	document.write("<" + "script src=\"" + url + "\"></" + "script>");
 }

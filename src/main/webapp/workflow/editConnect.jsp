@@ -1,29 +1,29 @@
-<%@ page language="java" contentType="text/javascript; charset=GBK" pageEncoding="GBK"%>
+<%@ page language="java" contentType="text/javascript; charset=UTF-8" pageEncoding="UTF-8"%>
 <div style='text-aligin:center'>
 
 <div class='tabs'>
 	<ul>
-		<li><a href="#condition">Ìõ        ¼þ</a></li>
-		<li><a href="#ExtProp">À©Õ¹ÊôÐÔ</a></li>
-		<li><a href="#ConnFuncProp">º¯ÊýÊôÐÔ</a></li>
+		<li><a href="#condition">æ¡        ä»¶</a></li>
+		<li><a href="#ExtProp">æ‰©å±•å±žæ€§</a></li>
+		<li><a href="#ConnFuncProp">å‡½æ•°å±žæ€§</a></li>
 	</ul>
 	<div id="condition">
-	<labe class="ui-widget ui-state-default cheader">×ªÏòÌõ¼þ</label>
+	<labe class="ui-widget ui-state-default cheader">è½¬å‘æ¡ä»¶</label>
 	<input type='text' name='condition' />
 	</div>
 	
 	<div id='ExtProp' style='VERTICAL-ALIGN:top'>
 		<div>
-		<span class='rbutton addProp'>Ìí¼Ó</span>
+		<span class='rbutton addProp'>æ·»åŠ </span>
 		</div>
 		<div class="propDiv">
 		<table cellpadding="0" cellspacing="0"  width="100%">
 		<thead>
 		<tr valign=top>
-			<td class='ui-widget ui-state-default cheader'  width='65px'>²Ù×÷</td>
-			<td class='ui-widget ui-state-default cheader'>ÊôÐÔÃû</td>
-			<td class='ui-widget ui-state-default cheader'>ÊôÐÔÖµ</td>
-			<td class='ui-widget ui-state-default cheader' width='80px'>ÀàÐÍ</td>
+			<td class='ui-widget ui-state-default cheader'  width='65px'>æ“ä½œ</td>
+			<td class='ui-widget ui-state-default cheader'>å±žæ€§å</td>
+			<td class='ui-widget ui-state-default cheader'>å±žæ€§å€¼</td>
+			<td class='ui-widget ui-state-default cheader' width='80px'>ç±»åž‹</td>
 		</tr>
 		</thead>
 		<tbody class='propBody'>
@@ -33,16 +33,16 @@
 	</div>
 	<div id='ConnFuncProp' style='VERTICAL-ALIGN:top'>
 		<div>
-		<span class='rbutton addFuncProp'>Ìí¼Ó</span>
+		<span class='rbutton addFuncProp'>æ·»åŠ </span>
 		</div>
 		<div class="propDiv">
 		<table cellpadding="0" cellspacing="0" width="100%">
 		<thead>
 		<tr valign=top>
-			<td class='ui-widget ui-state-default cheader' width='65px'>²Ù×÷</td>
-			<td class='ui-widget ui-state-default cheader'>ÀàÃû</td>
-			<td class='ui-widget ui-state-default cheader'  width='80px'>·½·¨Ãû</td>
-			<td class='ui-widget ui-state-default cheader'  width='45px'>ÀàÐÍ</td>
+			<td class='ui-widget ui-state-default cheader' width='65px'>æ“ä½œ</td>
+			<td class='ui-widget ui-state-default cheader'>ç±»å</td>
+			<td class='ui-widget ui-state-default cheader'  width='80px'>æ–¹æ³•å</td>
+			<td class='ui-widget ui-state-default cheader'  width='45px'>ç±»åž‹</td>
 		</tr>
 		</thead>
 		<tbody class='funcPropsBody'>

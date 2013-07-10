@@ -1,26 +1,26 @@
-<%@ page language="java" contentType="text/javascript; charset=GBK" pageEncoding="GBK"%>
+<%@ page language="java" contentType="text/javascript; charset=UTF-8" pageEncoding="UTF-8"%>
 <div style='text-aligin:center'>
 
 <div class='tabs'>
 	<ul>
-		<li><a href="#baseProp">»ù±¾ÊôÐÔ</a></li>
-		<li><a href="#ExtProp">À©Õ¹ÊôÐÔ</a></li>
-		<li><a href="#MethodProp">ÕûÌåÌí¼Ó·½·¨</a></li>
+		<li><a href="#baseProp">åŸºæœ¬å±žæ€§</a></li>
+		<li><a href="#ExtProp">æ‰©å±•å±žæ€§</a></li>
+		<li><a href="#MethodProp">æ•´ä½“æ·»åŠ æ–¹æ³•</a></li>
 	</ul>
 	<div id="baseProp">
 	<table cellpadding="0" cellspacing="0" width="100%">
 	<tr>
-		<td class='ui-widget ui-state-default lheader'>Á÷³ÌÃû×Ö</td>
+		<td class='ui-widget ui-state-default lheader'>æµç¨‹åå­—</td>
 		<td class="ui-widget ui-widget-content lcontent"><input type='text' name='name' /></td>
-		<td class='ui-widget ui-state-default lheader'>Á÷³ÌÃèÊö</td>
+		<td class='ui-widget ui-state-default lheader'>æµç¨‹æè¿°</td>
 		<td class="ui-widget ui-widget-content lcontent"><input type='text' name='description' /></td>
 	</tr>
 	<tr>
-		<td class='ui-widget ui-state-default lheader'>¿í</td>
+		<td class='ui-widget ui-state-default lheader'>å®½</td>
 		<td class="ui-widget ui-widget-content lcontent">
 		<input class='digits' type='text' name='width' />
 		</td>
-		<td class='ui-widget ui-state-default lheader'>¸ß</td>
+		<td class='ui-widget ui-state-default lheader'>é«˜</td>
 		<td class="ui-widget ui-widget-content lcontent">
 		<input class='digits' type='text' name='height' />
 		</td>
@@ -30,16 +30,16 @@
 	
 	<div id='ExtProp' style='VERTICAL-ALIGN:top'>
 		<div>
-		<span class='rbutton addProp'>Ìí¼Ó</span>
+		<span class='rbutton addProp'>æ·»åŠ </span>
 		</div>
 		<div class="propDiv">
 		<table cellpadding="0" cellspacing="0"  width="100%">
 		<thead>
 		<tr valign=top>
-			<td class='ui-widget ui-state-default cheader' width='45px'>²Ù×÷</td>
-			<td class='ui-widget ui-state-default cheader'>ÊôÐÔÃû</td>
-			<td class='ui-widget ui-state-default cheader'>ÊôÐÔÖµ</td>
-			<td class='ui-widget ui-state-default cheader' width='80px'>ÀàÐÍ</td>
+			<td class='ui-widget ui-state-default cheader' width='45px'>æ“ä½œ</td>
+			<td class='ui-widget ui-state-default cheader'>å±žæ€§å</td>
+			<td class='ui-widget ui-state-default cheader'>å±žæ€§å€¼</td>
+			<td class='ui-widget ui-state-default cheader' width='80px'>ç±»åž‹</td>
 		</tr>
 		</thead>
 		<tbody class='propBody'>
@@ -50,24 +50,24 @@
 	
 	<div id='MethodProp' style='VERTICAL-ALIGN:top'>
 		<div>
-		<span class='rbutton addMethod'>Ìí¼Ó</span>
+		<span class='rbutton addMethod'>æ·»åŠ </span>
 		</div>
 		<div class="methodDiv">
 		<table cellpadding="0" cellspacing="0"  width="100%">
 		<thead>
 		<tr valign=top>
-			<td class='ui-widget ui-state-default cheader' width='65px'>º¯ÊýÀàÐÍ</td>
-			<td class='ui-widget ui-state-default cheader'>ÀàÃû</td>
-			<td class='ui-widget ui-state-default cheader' width='80px'>·½·¨Ãû</td>
-			<td class='ui-widget ui-state-default cheader' width='45px'>ÀàÐÍ</td>
+			<td class='ui-widget ui-state-default cheader' width='65px'>å‡½æ•°ç±»åž‹</td>
+			<td class='ui-widget ui-state-default cheader'>ç±»å</td>
+			<td class='ui-widget ui-state-default cheader' width='80px'>æ–¹æ³•å</td>
+			<td class='ui-widget ui-state-default cheader' width='45px'>ç±»åž‹</td>
 		</tr>
 		</thead>
 		<tbody class='methodBody'>
 		<tr valign=top>
 			<td class='ui-widget ui-widget-content ccontent'>
 			<select name='methodType' class='methodType'>
-			<option value="1">³õÊ¼º¯Êý</option>
-			<option value="2">Ìõ¼þº¯Êý</option>
+			<option value="1">åˆå§‹å‡½æ•°</option>
+			<option value="2">æ¡ä»¶å‡½æ•°</option>
 			</select>
 			</td>
 			<td class='ui-widget ui-widget-content ccontent'>
