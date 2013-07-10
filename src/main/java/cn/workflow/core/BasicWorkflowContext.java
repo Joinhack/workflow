@@ -34,7 +34,7 @@ public class BasicWorkflowContext implements IWorkflowContext {
 		if(flowSerializeManagerName == null) {
 			flowSerializeManagerName = SysConf.getSysConf().getString("workflow.flowserializemanager");
 			if(flowSerializeManagerName == null)
-				flowSerializeManagerName = "com.sccl.workflow.core.BasicFlowSerializeManager";
+				flowSerializeManagerName = "cn.workflow.core.BasicFlowSerializeManager";
 		}
 		return flowSerializeManagerName;
 	}

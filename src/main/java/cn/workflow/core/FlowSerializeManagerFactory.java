@@ -7,7 +7,7 @@ import cn.workflow.exceptions.CommException;
 
 public class FlowSerializeManagerFactory {
 	
-	private static String managerDefaultName = "com.sccl.workflow.core.BasicFlowSerializeManager";
+	private static String managerDefaultName = "cn.workflow.core.BasicFlowSerializeManager";
 	
 	private static Log log = LogFactory.getLog(FlowSerializeManagerFactory.class);
 	

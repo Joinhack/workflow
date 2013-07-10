@@ -49,7 +49,7 @@ public class WorkflowFactory {
 			self = new WorkflowFactory();
 			workflowClzName = SysConf.getSysConf().getString("workflow.workflowClassName");
 			if(workflowClzName == null || "".equals(workflowClzName))
-				workflowClzName = "com.sccl.workflow.core.BasicWorkflow";
+				workflowClzName = "cn.workflow.core.BasicWorkflow";
 		}
 		return self;
 	}
