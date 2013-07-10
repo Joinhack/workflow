@@ -40,7 +40,7 @@ var objDown = function(props,o) {
 var addOrderButton = function(td,o,up,down){
 	var span = $("<span />");
 	span.attr('class','rbutton');
-	td.append(span.append("¡Ä"));
+	td.append(span.append("âˆ§"));
 	
 	span.click((function(o){
 		return function(){
@@ -52,7 +52,7 @@ var addOrderButton = function(td,o,up,down){
 	
 	span = $("<span />");
 	span.attr('class','rbutton');
-	td.append(span.append("¡Å"));
+	td.append(span.append("âˆ¨"));
 	
 	span.click((function(o){
 		return function(){
@@ -76,7 +76,7 @@ function procFuncPropRow(funcTypes,obj) {
 	target.append(tr);
 	var td = $("<td class='ui-widget ui-widget-content ccontent' nowrap/>");
 	tr.append(td);
-	var span = $("<span />").text("É¾");
+	var span = $("<span />").text("åˆ ");
 	span.click((function(tr){
 		return function(){
 			tr.find("input[name='clzName']").autocomplete("destroy");
@@ -89,10 +89,10 @@ function procFuncPropRow(funcTypes,obj) {
 	})(tr));
 	span.appendTo(td);
 	span.attr('class','rbutton');
-	span = $("<span  />").text("´æ");
+	span = $("<span  />").text("å­˜");
 	span.attr('class','rbutton');
 	if(o) {
-		span.text('¸Ä');
+		span.text('æ”¹');
 	}
 	span.appendTo(td);
 	var clzNameTd = $("<td class='ui-widget ui-widget-content ccontent clzName'/>");
@@ -202,7 +202,7 @@ function procFuncPropRow(funcTypes,obj) {
 		clzNameTd.children().remove();
 		methodNameTd.children().remove();
 		typeTd.children().remove();
-		span.text('´æ');
+		span.text('å­˜');
 		editRow(tr,o);
 	};
 	
@@ -211,11 +211,11 @@ function procFuncPropRow(funcTypes,obj) {
 		var v = tr.find("input[name='methodName']").val();
 		var t = tr.find("select[name='type']").val();
 		if(n == '' || /[ ]+/.test(n)) {
-			$.showErr("ÀàÃûÎª¿Õ»òÓĞ·Ç·¨×Ö·û");
+			$.showErr("ç±»åä¸ºç©ºæˆ–æœ‰éæ³•å­—ç¬¦");
 			return false;
 		}
 		if(v == '' || /[ ]+/.test(v)) {
-			$.showErr("·½·¨ÃûÎª¿Õ»òÓĞ·Ç·¨×Ö·û");
+			$.showErr("æ–¹æ³•åä¸ºç©ºæˆ–æœ‰éæ³•å­—ç¬¦");
 			return false;
 		}
 		tr.find("input[name='clzName']").autocomplete("destroy");
@@ -239,7 +239,7 @@ function procFuncPropRow(funcTypes,obj) {
 		o.type(t);
 		showRow(o);
 		tr.data("editData",o);
-		span.text('¸Ä');
+		span.text('æ”¹');
 		return true;
 	};
 	
@@ -272,7 +272,7 @@ function procPropRow(that,o) {
 	$('.propBody').append(tr);
 	var td = $("<td class='ui-widget ui-widget-content ccontent' nowrap/>");
 	tr.append(td);
-	var span = $("<span />").text("É¾");
+	var span = $("<span />").text("åˆ ");
 	span.click((function(tr){
 		return function(){
 			var dv = tr.find("input[name='propDisplayValue']");
@@ -285,9 +285,9 @@ function procPropRow(that,o) {
 	})(tr));
 	span.appendTo(td);
 	span.attr('class','rbutton');
-	span = $("<span  />").text("´æ");
+	span = $("<span  />").text("å­˜");
 	if(o) {
-		span.text('¸Ä');
+		span.text('æ”¹');
 	}
 	span.appendTo(td);
 	span.attr('class','rbutton');
@@ -349,7 +349,7 @@ function procPropRow(that,o) {
 		o.type(t);
 		showRow(o);
 		tr.data("editData",o);
-		span.text('¸Ä');
+		span.text('æ”¹');
 		return true;
 	};
 	var showRow = function(o) {
@@ -424,7 +424,7 @@ function procPropRow(that,o) {
 		nametd.children().remove();
 		valtd.children().remove();
 		typetd.children().remove();
-		span.text('´æ');
+		span.text('å­˜');
 		editRow(tr,o);
 	};
 	span.click((function(t){
@@ -475,11 +475,11 @@ function registerRegPropType(o) {
 	};
 	o.check = function(n,v,dv,input) {
 		if(n == '' || !/^[a-zA-Z]+$/.test(n)) {
-			$.showErr("ÎŞĞ§ÊôĞÔÃû£¬ÊôĞÔÃûÖ»ÄÜÊÇ×Ö·û´®");
+			$.showErr("æ— æ•ˆå±æ€§åï¼Œå±æ€§ååªèƒ½æ˜¯å­—ç¬¦ä¸²");
 			return false;
 		}
 		if(v == '') {
-			$.showErr("ÊôĞÔÖµ²»ÄÜÎª¿Õ");
+			$.showErr("å±æ€§å€¼ä¸èƒ½ä¸ºç©º");
 			return false;
 		}
 		if(o.reg.test(v)) {
@@ -493,17 +493,17 @@ function registerRegPropType(o) {
 	registerPropType(o);
 }
 
-registerRegPropType({name:'×Ö·û´®',value:'chars',reg:/.*/});
+registerRegPropType({name:'å­—ç¬¦ä¸²',value:'chars',reg:/.*/});
 
 registerRegPropType({
-	name:'Êı×Ö',
+	name:'æ•°å­—',
 	value:'digits',
-	msg: 'ÇëÊäÈëÊı×Ö',
+	msg: 'è¯·è¾“å…¥æ•°å­—',
 	reg:/^[0-9]+(.[0-9]{1,3})?$/});
 
 function registerDatePropType() {
 	o = {
-		name:'Ê±¼äÈÕÆÚ',
+		name:'æ—¶é—´æ—¥æœŸ',
 		value:'datetime',
 		events : {
 			"blur":function(e) {
@@ -521,11 +521,11 @@ function registerDatePropType() {
 		},
 		check: function(n,v,dv,input) {
 			if(n == '' || !/^[a-zA-Z]+$/.test(n)) {
-				$.showErr("ÎŞĞ§ÊôĞÔÃû£¬ÊôĞÔÃûÖ»ÄÜÊÇ×Ö·û´®");
+				$.showErr("æ— æ•ˆå±æ€§åï¼Œå±æ€§ååªèƒ½æ˜¯å­—ç¬¦ä¸²");
 				return false;
 			}
 			if(v == '') {
-				$.showErr("ÊôĞÔÖµ²»ÄÜÎª¿Õ");
+				$.showErr("å±æ€§å€¼ä¸èƒ½ä¸ºç©º");
 				return false;
 			}
 			return true;
@@ -689,13 +689,13 @@ EditNodeDlg.prototype = {
 					'modal':true,
 					'resizable':false,
 					'width': '600px',
-					'title': '½Úµã±à¼­',
+					'title': 'èŠ‚ç‚¹ç¼–è¾‘',
 					'autoOpen': false,
 					'buttons': {
-						'È¡Ïû':function(){
+						'å–æ¶ˆ':function(){
 							that.show(false);
 						},
-						'È·¶¨':function(){
+						'ç¡®å®š':function(){
 							if(!that.editOk()) 
 								return;
 							that.show(false);
@@ -854,13 +854,13 @@ EditConnectDlg.prototype = {
 					'modal':true,
 					'resizable':false,
 					'width': '600px',
-					'title': 'Á¬½Ó±à¼­',
+					'title': 'è¿æ¥ç¼–è¾‘',
 					'autoOpen': false,
 					'buttons': {
-						'È¡Ïû':function(){
+						'å–æ¶ˆ':function(){
 							that.show(false);
 						},
-						'È·¶¨':function(){
+						'ç¡®å®š':function(){
 							that.editOk();
 							that.show(false);
 						}
@@ -947,11 +947,11 @@ EditWorkflowDlg.prototype = {
 			var methodName = $('.methodName').val();
 			var type = $('select[name="type"]').val();
 			if(clzName == '' || /[ ]+/.test(clzName)) {
-				$.showErr("ÀàÃûÎª¿Õ»òÓĞ·Ç·¨×Ö·û");
+				$.showErr("ç±»åä¸ºç©ºæˆ–æœ‰éæ³•å­—ç¬¦");
 				return false;
 			}
 			if(methodName == '' || /[ ]+/.test(methodName)) {
-				$.showErr("·½·¨ÃûÎª¿Õ»òÓĞ·Ç·¨×Ö·û");
+				$.showErr("æ–¹æ³•åä¸ºç©ºæˆ–æœ‰éæ³•å­—ç¬¦");
 				return false;
 			}
 			
@@ -969,7 +969,7 @@ EditWorkflowDlg.prototype = {
 			});
 			$('.clzName').val('');
 			$('.methodName').val('');
-			$.showMsg("ÎªËùÓĞ½ÚµãÌí¼Ó·½·¨³É¹¦");
+			$.showMsg("ä¸ºæ‰€æœ‰èŠ‚ç‚¹æ·»åŠ æ–¹æ³•æˆåŠŸ");
 		});
 		$('.methodBody .clzName').autocomplete({
 				source:function(request, response) {
@@ -1012,13 +1012,13 @@ EditWorkflowDlg.prototype = {
 					'modal':true,
 					'resizable':false,
 					'width': '600px',
-					'title': '¹¤Á÷³Ì±à¼­',
+					'title': 'å·¥æµç¨‹ç¼–è¾‘',
 					'autoOpen': false,
 					'buttons': {
-						'È¡Ïû':function(){
+						'å–æ¶ˆ':function(){
 							that.show(false);
 						},
-						'È·¶¨':function(){
+						'ç¡®å®š':function(){
 							that.editOk();
 							that.show(false);
 						}
@@ -1052,4 +1052,3 @@ EditWorkflowDlg.prototype = {
 		}
 	}
 };
-

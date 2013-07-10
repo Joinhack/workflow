@@ -267,7 +267,7 @@ function Workflow(w,h) {
 					o = fixPos(that.getProtoObj(),e);
 					node.left(o.x);
 					node.top(o.y);
-					node.text('½Úµã');
+					node.text('èŠ‚ç‚¹');
 					node.height(50);
 					node.width(80);
 				}
@@ -845,7 +845,7 @@ function simpleShowWorkflow(xml,content) {
 				o.top = that.top() + offset.top - 23;
 				box.show();
 				box.content($("<div class='loading'/>").width(16).height(16));
-				box.title(that.text() + "ĞÅÏ¢");
+				box.title(that.text() + "ä¿¡æ¯");
 				box.position(o);
 				if(content != null && typeof(content) == "function")
 					box.content(content(that));
@@ -894,7 +894,7 @@ var checkNodeId = function(nodes) {
 $(document).ready(function(){
 	wf = new Workflow(800,600);
 	wf.id($.uuid());
-	wf.name("ĞÂ½¨µÄÁ÷³Ì");
+	wf.name("æ–°å»ºçš„æµç¨‹");
 	$("#container").width(wf.width());
 	$("#container").height(wf.height());
 	$("#container").append(wf.getProtoObj());
@@ -907,12 +907,12 @@ $(document).ready(function(){
 		root.attr("class","ui-widget ui-widget-content ui-corner-all");
 		head = $("<div/>").attr("class","ui-widget-header ui-corner-all");
 		root.append(head);
-		head.text("¹¤¾ßÀ¸");
+		head.text("å·¥å…·æ ");
 		var body = root;
 		
 		var rename = $("<div/>");
 		rename.attr("class","ui-widget ui-state-default ui-corner-all");
-		rename.text("Á÷³Ì±à¼­");
+		rename.text("æµç¨‹ç¼–è¾‘");
 		rename.css("cursor","pointer");
 		buttonStyle(rename);
 		var rendlg = null;
@@ -946,14 +946,14 @@ $(document).ready(function(){
 		
 		newObj.attr("class","ui-widget ui-state-default ui-corner-all");
 		newObj.css("cursor","pointer");
-		newObj.text("Ìí¼Ó½Úµã");
+		newObj.text("æ·»åŠ èŠ‚ç‚¹");
 		body.append(newObj);
 		
 		var delObj = $("<div/>");
 		delObj.attr("id","delObj");
 		delObj.attr("class","ui-widget ui-state-default ui-corner-all");
 		delObj.css("cursor","pointer");
-		delObj.text("É¾³ı½Úµã");
+		delObj.text("åˆ é™¤èŠ‚ç‚¹");
 		delObj.attr("except",'except');
 		buttonStyle(delObj);
 		delObj.click(function(){
@@ -964,7 +964,7 @@ $(document).ready(function(){
 		connObj.attr("id","connObj");
 		connObj.attr("class","ui-widget ui-state-default ui-corner-all");
 		connObj.css("cursor","pointer");
-		connObj.text("Á¬½Ó½Úµã");
+		connObj.text("è¿æ¥èŠ‚ç‚¹");
 		connObj.toggle(function(){
 			$(this).removeClass("ui-state-default");
 			$(this).addClass("ui-state-active");
@@ -983,7 +983,7 @@ $(document).ready(function(){
 		delC.attr("id","delConnect");
 		delC.attr("class","ui-widget ui-state-default ui-corner-all");
 		delC.css("cursor","pointer");
-		delC.text("É¾³ıÁ¬½Ó");
+		delC.text("åˆ é™¤è¿æ¥");
 		buttonStyle(delC);
 		delC.click(function(){
 			wf.delSelConnect();
@@ -998,26 +998,26 @@ $(document).ready(function(){
 		
 		var save = $("<div/>");
 		save.attr("class","ui-widget ui-state-default ui-corner-all");
-		save.text("±£¡¡¡¡´æ");
+		save.text("ä¿ã€€ã€€å­˜");
 		save.css("cursor","pointer");
 		buttonStyle(save);
 		save.click(function(){
 			if(!checkNodeId(wf.children())) {
-				$.showErr('ÖØ¸´ID,²»ÄÜ±£´æ');
+				$.showErr('é‡å¤ID,ä¸èƒ½ä¿å­˜');
 				
 				return;
 			}
 			if(wf.children().length < 1) {
-				$.showErr('ÎŞĞ§Á÷³Ì,²»ÄÜ±£´æ');
+				$.showErr('æ— æ•ˆæµç¨‹,ä¸èƒ½ä¿å­˜');
 				return;
 			}
 			var serial = new serialize2xml();
 			$.loadJSON(ctx + "/workflowSave.wf",{'workflow':serial.marshal(wf)},function(json){
 				if(json.code == 0) {
-					$.showMsg('±£´æ³É¹¦');
+					$.showMsg('ä¿å­˜æˆåŠŸ');
 				}
 				if(json.code < 0) {
-					$.showErr('±£´æÊ§°Ü');
+					$.showErr('ä¿å­˜å¤±è´¥');
 				}
 				if(json.msg)
 					$.showErr(json.msg);
@@ -1027,7 +1027,7 @@ $(document).ready(function(){
 		
 		var importBtn = $("<div/>");
 		importBtn.attr("class","ui-widget ui-state-default ui-corner-all");
-		importBtn.text("µ¼¡¡¡¡Èë");
+		importBtn.text("å¯¼ã€€ã€€å…¥");
 		importBtn.css("cursor","pointer");
 		buttonStyle(importBtn);
 		var importDiv = $("<div id='importDiv'/>").append($('<textarea />')).hide();
@@ -1040,15 +1040,15 @@ $(document).ready(function(){
 				'modal':true,
 				'resizable':false,
 				'width': '380px',
-				'title': 'µ¼Èë',
+				'title': 'å¯¼å…¥',
 				'autoOpen': true,
 				'buttons': {
-					'È¡Ïû':function(){
+					'å–æ¶ˆ':function(){
 						$(this).dialog("close");
 					},
-					'È·¶¨':function(){
+					'ç¡®å®š':function(){
 						if(textarea.val() == '') {
-							$.showMsg('Çë¿½±´µ¼ÈëÄ£°å');
+							$.showMsg('è¯·æ‹·è´å¯¼å…¥æ¨¡æ¿');
 							return;
 						}
 						$(this).dialog("close");
@@ -1066,7 +1066,6 @@ $(document).ready(function(){
 	
 	toolbar($("#panel"));
 });
-
 
 
 

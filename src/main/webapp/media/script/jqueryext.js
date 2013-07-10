@@ -43,7 +43,7 @@
 	};
 	
 	$.extend({loadData: function (url,data,fun,p) {
-		var wl = new WaitLayer("ÇëµÈ´ı...");
+		var wl = new WaitLayer("ç¨å...");
 		params = {
 			type:'POST',
 			url:url,
@@ -119,13 +119,13 @@
 	$.showMsg = function(msg,stay) {
 		if(stay == null)
 			stay == 2000;
-		show('ÌáÊ¾£º',msg,"ui-state-highlight",2000);
+		show('æ¶ˆæ¯',msg,"ui-state-highlight",2000);
 	};
 	
 	$.showErr = function(msg,stay) {
 		if(stay == null)
 			stay == 2000;
-		show('´íÎó£º',msg,'ui-state-error',2000);
+		show('é”™è¯¯',msg,'ui-state-error',2000);
 	};
 })(jQuery);
 
