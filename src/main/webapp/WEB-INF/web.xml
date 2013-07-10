@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>Workflow</display-name>
+	
+	<servlet>
+		<servlet-name>methodInfoShow</servlet-name>
+		<servlet-class>com.sccl.workflow.web.MethodInfoShow</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>methodInfoShow</servlet-name>
+		<url-pattern>/methodInfoShow.wf</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>classInfoShow</servlet-name>
+		<servlet-class>com.sccl.workflow.web.ClassInfoShow</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>classInfoShow</servlet-name>
+		<url-pattern>/classInfoShow.wf</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>workflowShow</servlet-name>
+		<servlet-class>com.sccl.workflow.web.WorkflowShow</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>workflowShow</servlet-name>
+		<url-pattern>/workflowShow.wf</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>workflowShowGet</servlet-name>
+		<servlet-class>com.sccl.workflow.web.WorkflowShowGet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>workflowShowGet</servlet-name>
+		<url-pattern>/workflowShowGet.wf</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>methodAutoComplete</servlet-name>
+		<servlet-class>com.sccl.workflow.web.MethodAutoComplete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>methodAutoComplete</servlet-name>
+		<url-pattern>/methodAutoComplete.wf</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>classAutoComplete</servlet-name>
+		<servlet-class>com.sccl.workflow.web.ClassAutoComplete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>classAutoComplete</servlet-name>
+		<url-pattern>/classAutoComplete.wf</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>workflowSave</servlet-name>
+		<servlet-class>com.sccl.workflow.web.WorkflowSave</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>workflowSave</servlet-name>
+		<url-pattern>/workflowSave.wf</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>workflowGet</servlet-name>
+		<servlet-class>com.sccl.workflow.web.WorkflowGet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>workflowGet</servlet-name>
+		<url-pattern>/workflowGet.wf</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>workflow</servlet-name>
+		<servlet-class>com.sccl.workflow.web.Workflow</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>workflow</servlet-name>
+		<url-pattern>/workflow.wf</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>includeJs</servlet-name>
+		<servlet-class>com.sccl.workflow.web.IncludeJS</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>includeJs</servlet-name>
+		<url-pattern>/workflow.js</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>com.sccl.workflow.web.CharactorEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>GBK</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>*.wf</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
